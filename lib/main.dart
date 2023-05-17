@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(title: const Text("flutter title"),leading: Icon(Icons.ondemand_video),),
+      appBar: AppBar(title: const Text("flutter title test"),leading: Icon(Icons.ondemand_video),),
       floatingActionButton: FloatingActionButton(onPressed: () {  }, child: const Icon(Icons.add_shopping_cart)),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
