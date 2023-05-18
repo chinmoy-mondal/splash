@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splash/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:splash/src/utils/theme/theme.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: const MyHomePage(title: 'Title of Flutter'),
+      home: SplashScreen(),
     );
   }
 }
