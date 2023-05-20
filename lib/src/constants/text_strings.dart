@@ -10,7 +10,7 @@ const String tOnBoardingTitle2 = "Learn from YouTube";
 const String tOnBoardingTitle3 = "Get Code & Resources";
 
 const String tOnBoardingSubTitle1 = "Let's start your journey with us on this amazing and easy";
-const String tOnBoardingSubTitle2 = "Save time by just pasting complete apps learn form";
+const String tOnBoardingSubTitle2 = "Get video tutotial of each tropic to learn";
 const String tOnBoardingSubTitle3 = "Save time by just pasting complete apps learn form";
 
 const String tOnBoardingCounter1 = "1/3";
