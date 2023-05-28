@@ -55,14 +55,14 @@ dev_dependencies:
 flutter_native_splash:
   color: "#f7f6f1"
   color_dark: "#272727"
-  image: assets/images/monogram.png
-  image_dark: assets/images/monogram.png
+  image: assets/images/barger.png
+  image_dark: assets/images/barger.png
 
-  android_12:
-    image: assets/images/monogram.png
-    icon_backdround_color: "#f7f6f1"
-    image_dark: assets/images/monogram.png
-    icon_background_color_dark: "#272727"
+#  android_12:
+#    image: assets/images/barger.png
+#    icon_backdround_color: "#f7f6f1"
+#    image_dark: assets/images/barger.png
+#    icon_background_color_dark: "#272727"
 
 
 
