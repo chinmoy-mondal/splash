@@ -9,6 +9,7 @@ import 'package:splash/src/constants/sizes.dart';
 import 'package:splash/src/features/authentication/screens/login/login_screen.dart';
 
 import '../../../../constants/text_strings.dart';
+import '../signup/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -68,7 +69,8 @@ class WelcomeScreen extends StatelessWidget {
                       children: [
                         Expanded(
                             child: OutlinedButton(
-                                onPressed: () => Get.to(()=>const LoginScreen()),
+                                onPressed: () =>
+                                    Get.to(() => const LoginScreen()),
                                 child: Text(
                                   tLogin.toUpperCase(),
                                 ))),
@@ -77,7 +79,7 @@ class WelcomeScreen extends StatelessWidget {
                         ),
                         Expanded(
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () => Get.to(() => const SignUpScreen()),
                             child: Text(
                               tSignup.toUpperCase(),
                             ),

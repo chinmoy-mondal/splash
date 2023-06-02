@@ -1,12 +1,12 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../constants/sizes.dart';
 import '../../../../constants/text_strings.dart';
+import '../forget_password/forget_password_options/forget_password_btn_widget.dart';
+import '../forget_password/forget_password_options/forget_password_model_bottom_sheet.dart';
 
-class LooginForm extends StatelessWidget {
-  const LooginForm({
+class LoginForm extends StatelessWidget {
+  const LoginForm({
     super.key,
   });
 
@@ -14,8 +14,7 @@ class LooginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Container(
-        padding:
-        const EdgeInsets.symmetric(vertical: tFormHeight - 10),
+        padding: const EdgeInsets.symmetric(vertical: tFormHeight - 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -36,8 +35,7 @@ class LooginForm extends StatelessWidget {
                   hintText: tPassword,
                   border: OutlineInputBorder(),
                   suffixIcon: IconButton(
-                      onPressed: null,
-                      icon: Icon(Icons.remove_red_eye_sharp))),
+                      onPressed: null, icon: Icon(Icons.remove_red_eye_sharp))),
             ),
             const SizedBox(
               height: tFormHeight - 20,
@@ -45,16 +43,21 @@ class LooginForm extends StatelessWidget {
             Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      ForgetPasswordScreen.buildShowModalBottomSheet(context);
+                    },
                     child: const Text(tForgetPassword))),
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text(tLogin.toUpperCase())))
+                    onPressed: () {}, child: Text(tLogin.toUpperCase())))
           ],
         ),
       ),
     );
   }
+
+
 }
+
+

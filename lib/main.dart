@@ -12,13 +12,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter  Demo',
+
+      // title: 'Flutter  Demo',
+
+      themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      themeMode: ThemeMode.system,
+      debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.leftToRight,
+      transitionDuration: const Duration(milliseconds: 500),
       home: const SplashScreen(),
     );
   }
