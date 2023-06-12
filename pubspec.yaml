@@ -40,6 +40,9 @@ dependencies:
   get: ^4.6.5
   liquid_swipe: ^3.1.0
   smooth_page_indicator: ^1.1.0
+  flutter_otp_text_field: ^1.1.1
+  firebase_core: ^2.13.1
+  firebase_auth: ^4.6.2
 
 dev_dependencies:
   flutter_test:
@@ -81,11 +84,12 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/
     - assets/logo/
+    - assets/images/
+    - assets/images/dashboard/
     - assets/images/splash_images/
-    - assets/images/on_boarding_images/
     - assets/images/forget_password/
+    - assets/images/on_boarding_images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

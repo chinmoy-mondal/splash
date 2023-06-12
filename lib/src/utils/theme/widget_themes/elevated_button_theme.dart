@@ -11,6 +11,7 @@ class TElevatedButtonTheme {
       elevation: 0,
       shape: const RoundedRectangleBorder(),
       foregroundColor: tWhiteBgColor,
+      backgroundColor: tSecondaryColor,
       side: const BorderSide(color: tSecondaryColor),
       padding: const EdgeInsets.symmetric(vertical: tButtonHeight),
     ),
@@ -19,7 +20,8 @@ class TElevatedButtonTheme {
     style: OutlinedButton.styleFrom(
       elevation: 0,
       shape: const RoundedRectangleBorder(),
-      foregroundColor: tWhiteBgColor,
+      foregroundColor: tSecondaryColor,
+      backgroundColor: tWhiteBgColor,
       side: const BorderSide(color: tWhiteBgColor),
       padding: const EdgeInsets.symmetric(vertical: tButtonHeight),
     ),

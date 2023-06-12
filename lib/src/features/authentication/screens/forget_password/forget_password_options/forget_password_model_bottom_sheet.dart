@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:splash/src/features/authentication/screens/forget_password/forget_passworrd_mail/forget_password_mail.dart';
+import 'package:splash/src/features/authentication/screens/forget_password/forget_password_mail/forget_password_mail.dart';
 
 import '../../../../../constants/sizes.dart';
 import '../../../../../constants/text_strings.dart';
@@ -24,12 +22,7 @@ class ForgetPasswordScreen{
                 style:
                 Theme.of(context).textTheme.bodyLarge,
               ),
-              Text(
-                tForgetMailSubTitle,
-                style: Theme.of(context)
-                    .textTheme
-                    .bodyMedium,
-              ),
+              Text(tForgetMailSubTitle,style: Theme.of(context).textTheme.bodyMedium),
               const SizedBox(
                 height: 30,
               ),
