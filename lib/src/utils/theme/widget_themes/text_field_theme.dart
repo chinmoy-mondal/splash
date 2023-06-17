@@ -4,21 +4,21 @@ import 'package:splash/src/constants/colors.dart';
 class TTextFormFieldTheme {
   TTextFormFieldTheme._();
 
-  static InputDecorationTheme lightInputDecorationTheme =
-      const InputDecorationTheme(
-          border: OutlineInputBorder(),
-          prefixIconColor: tSecondaryColor,
-          floatingLabelStyle: TextStyle(color: tSecondaryColor),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(width: 2, color: tSecondaryColor),
-          ));
-
-  static InputDecorationTheme darkInputDecorationTheme =
-  const InputDecorationTheme(
-      border: OutlineInputBorder(),
-      prefixIconColor: tPrimaryColor,
-      floatingLabelStyle: TextStyle(color: tPrimaryColor),
+  static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(100)),
+      prefixIconColor: tSecondaryColor,
+      floatingLabelStyle: const TextStyle(color: tSecondaryColor),
       focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(100),
+        borderSide: BorderSide(width: 2, color: tSecondaryColor),
+      ));
+
+  static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(100)),
+      prefixIconColor: tPrimaryColor,
+      floatingLabelStyle: const TextStyle(color: tPrimaryColor),
+      focusedBorder:  OutlineInputBorder(
+          borderRadius: BorderRadius.circular(100),
         borderSide: BorderSide(width: 2, color: tPrimaryColor),
       ));
 }

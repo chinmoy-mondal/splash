@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:splash/src/constants/sizes.dart';
+import 'package:splash/src/features/authentication/controllers/otp_controller.dart';
 
 import '../../../../../constants/text_strings.dart';
 
@@ -10,7 +13,8 @@ class OTPScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    var otpController = Get.put(OTPController());
+    var otp;
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.all(tDefaultSize),
@@ -33,24 +37,24 @@ class OTPScreen extends StatelessWidget {
               "$tOtpMessage support@codingwitht.com",
               textAlign: TextAlign.center,
             ),
-            const SizedBox(
-              height: 20.0,
-            ),
+            const SizedBox(height: 20.0),
             OtpTextField(
               numberOfFields: 6,
               fillColor: Colors.black.withOpacity(0.1),
               filled: true,
               onSubmit: (code) {
-                print("OTP is => $code");
+                otp = code;
+                OTPController.instance.verifyOTP(otp);
               },
             ),
-            const SizedBox(
-              height: 20.0,
-            ),
+            const SizedBox(height: 20.0),
             SizedBox(
                 width: double.infinity,
                 child:
-                    ElevatedButton(onPressed: () {}, child: const Text(tNext)))
+                    ElevatedButton(onPressed: () {
+                      OTPController.instance.verifyOTP(otp);
+                    },
+                        child: const Text(tNext)))
           ],
         ),
       ),
