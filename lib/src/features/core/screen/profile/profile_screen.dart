@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:splash/src/constants/colors.dart';
 import 'package:splash/src/constants/sizes.dart';
 import 'package:splash/src/constants/text_strings.dart';
 import 'package:splash/src/features/core/screen/profile/update_profile_screen.dart';
 import 'package:splash/src/features/core/screen/profile/widgets/profile_menu.dart';
+import 'package:splash/src/repository/authentication_repository/authentication_repository.dart';
 
 import '../../../../constants/image_strings.dart';
 
@@ -23,7 +23,9 @@ class ProfileScreen extends StatelessWidget {
         title: Text(tProfile, style: Theme.of(context).textTheme.headline4),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                AuthenticationRepository.instance.logout();
+              },
               icon: Icon(isDark ? LineAwesomeIcons.sun : LineAwesomeIcons.moon))
         ],
       ),

@@ -25,7 +25,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.leftToRightWithFade,
       transitionDuration: const Duration(milliseconds: 500),
-      home: const CircularProgressIndicator(),
+      home: Column(
+
+      )
     );
   }
 }

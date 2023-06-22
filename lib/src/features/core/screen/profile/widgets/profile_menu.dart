@@ -32,26 +32,21 @@ class ProfileMenuWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(100),
           color: tAccentColor.withOpacity(0.1),
         ),
-        child: Icon(
-          icon,
-          color: iconColor,
-        ),
+        child: Icon(icon, color: iconColor),
       ),
-      title: Text(
-        title,
-        style: Theme.of(context).textTheme.bodyText1?.apply(color: texColor),
-      ),
+      title: Text(title,
+          style: Theme.of(context).textTheme.bodyText1?.apply(color: texColor)),
       trailing: endIcon
-          ? Container(
-              width: 30,
-              height: 30,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
-                color: Colors.grey.withOpacity(0.1),
-              ),
-              child: const Icon(LineAwesomeIcons.angle_right,
-                  size: 18.0, color: Colors.grey),
-            )
+          ?Container(
+                width: 30,
+                height: 30,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Colors.grey.withOpacity(0.1),
+                ),
+                child: const Icon(LineAwesomeIcons.angle_right,
+                    size: 18.0, color: Colors.grey),
+              )
           : null,
     );
   }

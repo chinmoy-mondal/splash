@@ -1,6 +1,8 @@
 import 'dart:ffi';
 import 'dart:ui';
 
+import 'package:splash/src/constants/text_strings.dart';
+
 class OnBoardingModel{
   final String image;
   final String title;
@@ -14,6 +16,6 @@ class OnBoardingModel{
     required this.subTitle,
     required this.counterText,
     required this.bgColor,
-
 });
+
 }
