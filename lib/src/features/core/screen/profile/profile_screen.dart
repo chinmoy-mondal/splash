@@ -5,6 +5,7 @@ import 'package:splash/src/constants/colors.dart';
 import 'package:splash/src/constants/sizes.dart';
 import 'package:splash/src/constants/text_strings.dart';
 import 'package:splash/src/features/core/screen/profile/update_profile_screen.dart';
+import 'package:splash/src/features/core/screen/profile/user_management_screen.dart';
 import 'package:splash/src/features/core/screen/profile/widgets/profile_menu.dart';
 import 'package:splash/src/repository/authentication_repository/authentication_repository.dart';
 
@@ -92,7 +93,7 @@ class ProfileScreen extends StatelessWidget {
               ProfileMenuWidget(
                   title: "User Management",
                   icon: LineAwesomeIcons.user_check,
-                  onPress: () {}),
+                  onPress: () => Get.to(()=>const UserManagementScreen())),
               const Divider(),
               const SizedBox(height: 10),
               ProfileMenuWidget(
